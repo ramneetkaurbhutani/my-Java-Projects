@@ -28,7 +28,7 @@ public class FileOperations implements Operations {
 //--------------------------------------------------------------------------------------------	
 	public void displayFiles() {
 		try {
-			File displayFiles = new File("C:\\Users\\ramneet\\Desktop\\simplilearn\\class codes\\Code5\\src");
+			File displayFiles = new File("C:\\simplilearn\\class codes");
 			String[] listOfFiles = displayFiles.list();
 			Arrays.sort(listOfFiles , (f1 , f2) -> f1.compareTo(f2));
 		    System.out.println("---------------------------------------------------");
@@ -47,7 +47,7 @@ public class FileOperations implements Operations {
 		boolean r = fileNameValidity(this.fileName);
 		if (r == true) {
 		
-			 this.fileName = "C:\\Users\\ramneet\\Desktop\\simplilearn\\class codes\\Code5\\src\\" + this.fileName;
+			 this.fileName = "C:\\simplilearn\\class codes\\" + this.fileName;
 			File addFile = new File(this.fileName);
 			
 			try {
@@ -79,7 +79,7 @@ public class FileOperations implements Operations {
 		if (r == true) {
 			
 			int count = 0;
-			File displayFiles = new File("C:\\Users\\ramneet\\Desktop\\simplilearn\\class codes\\Code5\\src" );
+			File displayFiles = new File("C:\\simplilearn\\class codes" );
 			String[] listOfFiles = displayFiles.list();
 			
 			for(int a =0; a < listOfFiles.length; a++) {
@@ -90,7 +90,7 @@ public class FileOperations implements Operations {
 			}
 			
 			if(count != 0) {
-				 this.fileName = "C:\\Users\\ramneet\\Desktop\\simplilearn\\class codes\\Code5\\src\\" + this.fileName;
+				 this.fileName = "C:\\simplilearn\\class codes\\" + this.fileName;
 					File deleteFile = new File(this.fileName);
 					
 					
@@ -117,7 +117,7 @@ public class FileOperations implements Operations {
         // USING LINEAR SEARCH
 			
 			int count = 0;
-			File searchFiles = new File("C:\\Users\\ramneet\\Desktop\\simplilearn\\class codes\\Code5\\src" );
+			File searchFiles = new File("C:\\simplilearn\\class codes" );
 			String[] listOfFiles = searchFiles.list();
 			for(int i =0; i < listOfFiles.length; i++) {
 				if(listOfFiles[i].equals(this.fileName)) {
@@ -140,7 +140,7 @@ public class FileOperations implements Operations {
 
 // USING FILE SEARCH METHOD
 			
-//String filename1 = "C:\\Users\\ramneet\\Desktop\\simplilearn\\class codes\\Code5\\src\\" + this.fileName;			
+//String filename1 = "C:\\simplilearn\\class codes\\" + this.fileName;			
 //			
 //			File searchFile = new File(filename1);
 //			boolean result = searchFile.exists();
